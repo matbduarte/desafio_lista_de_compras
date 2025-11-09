@@ -1,0 +1,25 @@
+.desktop-only {
+    display: initial;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+
+@media (width < 80em) { /* < 1280px */
+    .desktop-only {
+        display: none;
+    }
+}

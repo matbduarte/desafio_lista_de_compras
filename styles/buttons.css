@@ -1,0 +1,19 @@
+button {
+    all: unset;
+    padding-inline: 1.5rem; /* 24px */
+    border-radius: .75rem; /* 12px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.75rem; /* 44px */
+
+    background-color: var(--brand);
+    font: var(--label);
+    color: var(--always-white);
+
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--brand-hover);
+    }
+}
