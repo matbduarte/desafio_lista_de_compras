@@ -31,6 +31,8 @@
     --label: 600 16px/20px var(--font-family);
     --paragraph: 400 16px/20px var(--font-family);
     --link: 400 14px/16px var(--font-family);
+
+    --px: 23.125rem; /* 370px */
 }
 
 html {
@@ -43,13 +45,18 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    font: var(--title);
+}
+
 img {
     max-width: 100%;
 }
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--brand);
+    font: var(--link);
 }
 
 ul[role="list"] {
@@ -58,14 +65,6 @@ ul[role="list"] {
 
 @media (width < 80em) { /* < 1280px */
     :root {
-        --fs-lg: 2rem;
-        --fs-xl: 3rem;
-        --fs-2xl: 4rem;
-
-        --py-base: 1.5rem;
-        --py-lg: 2.5rem;
-        --px-xl: 5rem;
-
-        --px-lg: 2rem;
+        --px: 2rem; /* 32px */
     }
 }

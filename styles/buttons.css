@@ -6,6 +6,8 @@ button {
     align-items: center;
     justify-content: center;
     height: 2.75rem; /* 44px */
+    width: 100%;
+    box-sizing: border-box;
 
     background-color: var(--brand);
     font: var(--label);

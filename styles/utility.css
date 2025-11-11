@@ -1,9 +1,34 @@
+.px {
+    padding-inline: var(--px);
+}
+
+.container {
+    --max-width: 1280px;
+    width: min(var(--max-width), 100% - var(--px) * 2); /* subtract lateral padding from both sides */
+    margin-inline: auto; /* center container */
+}
+
 .desktop-only {
     display: initial;
 }
 
+/* make side by side on desktop */
+.even-columns {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
 .flex {
     display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
 }
 
 .justify-between {
@@ -18,8 +43,37 @@
     gap: 1rem;
 }
 
+.mt-back {
+    margin-top: 3.875rem;
+}
+
+.mb-16 {
+    margin-bottom: 1rem;
+}
+
+.mb-36 {
+    margin-bottom: 2.25rem;
+}
+
+.mb-40 {
+    margin-bottom: 2.5rem;
+}
+
+.mb-44 {
+    margin-bottom: 2.75rem;
+}
+
 @media (width < 80em) { /* < 1280px */
     .desktop-only {
         display: none;
+    }
+
+    /* make one above the other on mobile */
+    .even-columns {
+        flex-direction: column;
+    }
+
+    .mt-back {
+        margin-top: 2.125rem;
     }
 }
