@@ -3,13 +3,15 @@
 }
 
 .container {
-    --max-width: 1280px;
+    --max-width: 1280px; /* 380px for mobile */
     width: min(var(--max-width), 100% - var(--px) * 2); /* subtract lateral padding from both sides */
     margin-inline: auto; /* center container */
 }
 
 .desktop-only {
-    display: initial;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
 }
 
 /* make side by side on desktop */
@@ -64,6 +66,10 @@
 }
 
 @media (width < 80em) { /* < 1280px */
+    .container {
+        --max-width: 23.75rem; /* 380px */
+    }
+
     .desktop-only {
         display: none;
     }

@@ -1,11 +1,45 @@
+.delete-message {
+    display: flex;
+    padding: .75rem .75rem;
+    background-color: var(--danger);
+    border-radius: .75rem; /* 12px */
+    align-items: center;
+
+    p {
+        font: var(--label);
+        color: var(--always-white);
+        margin-left: .5rem;
+    }
+
+    p + img {
+        margin-left: auto;
+        cursor: pointer;
+    }
+}
+
+.items-list {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    margin-bottom: 2.25rem;
+}
+
 .items-wrapper {
     display: flex;
-    gap: .75rem; /* 12px */
+    padding: .5rem .75rem;
+    background-color: var(--background-secondary);
+    border-radius: .75rem;
+    height: var(--item-height);
     align-items: center;
 
     label {
         font: var(--paragraph);
         color: var(--content-secondary);
+        margin-left: .75rem;
+    }
+
+    img {
+        margin-left: auto;
     }
 }
 

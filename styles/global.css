@@ -33,6 +33,7 @@
     --link: 400 14px/16px var(--font-family);
 
     --px: 23.125rem; /* 370px */
+    --item-height: 49px;
 }
 
 html {
@@ -66,5 +67,6 @@ ul[role="list"] {
 @media (width < 80em) { /* < 1280px */
     :root {
         --px: 2rem; /* 32px */
+        --item-height: 57px;
     }
 }

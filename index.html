@@ -14,8 +14,12 @@
   </head>
   <body>
     <main class="container">
+      <div class="desktop-only">
+        <img src="assets/logo.svg" alt="">
+      </div>
+
       <div class="mb-16 mt-back">
-        <a href="#">Voltar</a>
+        <a href="#"><- Voltar</a>
       </div>
 
       <h1 class="mb-44">Compras da semana</h1>
@@ -30,11 +34,40 @@
         </div>
       </div>
       
-      <div class="items-wrapper input-wrapper checkbox-wrapper">
-        <div class="checkbox-image"></div>
-        <input type="checkbox" name="terms" id="terms" />
-  
-        <label for="terms">Teste</label>
+      <div class="items-list">
+        <div class="items-wrapper input-wrapper checkbox-wrapper">
+          <div class="checkbox-image"></div>
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">Pão de forma</label>
+          <img src="assets/garbage.svg" alt="">
+        </div>
+
+        <div class="items-wrapper input-wrapper checkbox-wrapper">
+          <div class="checkbox-image"></div>
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">Café preto</label>
+          <img src="assets/garbage.svg" alt="">
+        </div>
+        
+        <div class="items-wrapper input-wrapper checkbox-wrapper">
+          <div class="checkbox-image"></div>
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">Suco de laranja</label>
+          <img src="assets/garbage.svg" alt="">
+        </div>
+
+        <div class="items-wrapper input-wrapper checkbox-wrapper">
+          <div class="checkbox-image"></div>
+          <input type="checkbox" name="terms" id="terms" />
+          <label for="terms">Bolacha</label>
+          <img src="assets/garbage.svg" alt="">
+        </div>
+      </div>
+
+      <div class="delete-message">
+        <img src="assets/warning.svg" alt="">
+        <p>O item foi removido da lista</p>
+        <img src="assets/cross.svg" alt="">
       </div>
     </main>
   </body>
