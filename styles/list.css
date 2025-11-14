@@ -29,8 +29,7 @@ ul {
 }
 
 .delete-message {
-  display: flex;
-  /* display: none; */
+  display: none;
   padding: .75rem .75rem;
   background-color: var(--danger);
   border-radius: .75rem; /* 12px */
@@ -46,4 +45,8 @@ ul {
       margin-left: auto;
       cursor: pointer;
   }
+}
+
+.unhide {
+  display: flex;
 }
